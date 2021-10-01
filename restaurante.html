@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ordenando una pizza</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/restaurante.css" />
+</head>
+<link rel="stylesheet" href="css/nav_style.css" />
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Restaurante San Salvador</a></li>
+
+    </nav>
+</header>
+ 
+<body>
+    <h1>Restaurante San Salvador</h1>
+    <table cellspacing="0" cellpadding="0" id="mi-tabla" class="tabla">
+        <thead>
+          <tr>
+            <th><span>No.</span></th>
+            <th><span>Producto</span></th>
+            <th><span>Precio($)</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="align-left">1</td>
+            <td>Ensalada</td>
+            <td>$1.50</td>
+          </tr>
+          <tr>
+            <td class="align-left">2</td>
+            <td>Papa frita</td>
+            <td>$1.25</td>
+          </tr>
+          <tr>
+            <td class="align-left">3</td>
+            <td>Pieza de pollo grande</td>
+            <td>$1.75</td>
+          </tr>
+          <tr>
+            <td class="align-left">4</td>
+            <td>Pieza de pollo mediana</td>
+            <td>$1.50</td>
+          </tr>
+          <tr>
+            <td class="align-left">5</td>
+            <td>Pieza de pollo pequeña</td>
+            <td>$1.25</td>
+          </tr>
+          <tr>
+            <td class="align-left">6</td>
+            <td>Bebida grande</td>
+            <td>$1.50</td>
+          </tr>
+          <tr>
+            <td class="align-left">7</td>
+            <td>Bebida mediana</td>
+            <td>$1.25</td>
+          </tr>
+          <tr>
+            <td class="align-left">8</td>
+            <td>Bebida pequeña</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td class="align-left">9</td>
+            <td>Café</td>
+            <td>$0.50</td>
+          </tr>
+          <tr>
+            <td class="align-left">10</td>
+            <td>Postre</td>
+            <td>$1.25</td>
+          </tr>
+        </tbody>
+      </table>
+
+<br>
+<form action="javascript:void(0);" class="demoForm" id="polloForm">
+<fieldset>
+<legend>Tamaño e ingredientes</legend>
+<p>Tamaño del combo:
+<label><input type="radio" name="size" value="7.25" checked="checked"
+/>Super Combo</label>
+<label><input type="radio" name="size" value="5.75" />Personal</label>
+<label><input type="radio" name="size" value="3.50" />Infantil</label>
+<input type="hidden" name="sz_tot" value="0.00" />
+</p>
+<p id="pollo_toppings"><label>Extras:</label>
+<label><input type="checkbox" name="Ensalada" value="1.50" />Ensalada</label>
+<label><input type="checkbox" name="papas" value="1.25" />Papas fritas</label>
+<label><input type="checkbox" name="pollog" value="1.75" />Pieza de pollo grande</label>
+<label><input type="checkbox" name="pollom" value="1.50" />Pieza de pollo mediana</label>
+<label><input type="checkbox" name="pollop" value="1.25" />Pieza de pollo pequeña</label>
+<label><input type="checkbox" name="bebidag" value="1.50" />Bebida Grande</label>
+<label><input type="checkbox" name="bebidam" value="1.25" />Bebida mediana</label>
+<label><input type="checkbox" name="bebidap" value="1.00" />Bebida pequeña</label>
+<label><input type="checkbox" name="cafe" value="0.50" />Café</label>
+<label><input type="checkbox" name="postre" value="1.25" />Postre</label>
+<input type="hidden" name="tops_tot" value="0.00" />
+</p>
+<p>
+<label>
+Total: $ <input type="text" name="total" class="num" value="0.00"
+readonly="readonly" />
+</label>
+</p>
+<p>
+<input type="submit" name="submit" value="Submit" />
+</p>
+</fieldset>
+</form>
+<section>
+    <article>
+    <div id="wrap">
+    <h1>Déjanos tus comentarios</h1>
+    <div id='form_wrap'>
+    <form id="contact-form" action="javascript:alert('¡Comentario enviado!');">
+    <p id="formstatus"></p>
+    <p>
+    Instrucciones: CTRL+E para Editar y CTRL+S para Guardar,
+    ESC para Cancelar.
+    </p>
+    <label for="email">Tu mensaje: </label>
+    <div id="view"></div>
+    <textarea name="message" id="area" value="Tu mensaje" id="message" ></textarea>
+<br>
+    <input type="submit" name ="submit" value="Enviar" />
+    </form>
+    </div>
+    </div>
+    <div id="fact">
+    </div>
+    </article>
+    </section>
+
+
+<script src="js/keydown.js"></script>
+<script src="js/restaurante.js"></script>
+</body>
+</html>
